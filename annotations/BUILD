@@ -9,4 +9,8 @@ licenses(["notice"])  # Apache 2.0
 java_library(
     name = "annotations",
     srcs = glob(["src/main/java/**/*.java"]),
+    javacopts = [
+        "-source 7",
+        "-target 7",
+    ],
 )
