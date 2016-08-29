@@ -9,4 +9,5 @@ licenses(["notice"])  # Apache 2.0
 java_library(
     name = "annotation",
     srcs = glob(["src/main/java/**/*.java"]),
+    deps = ["//external:guava"],
 )
